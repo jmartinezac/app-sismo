@@ -22,15 +22,11 @@ jobs:
 
       - run: flutter build ios --release --no-codesign
 
-      - run: mkdir Payload
-        working-directory: compile/
-
-      - run: mv Runner.app/ Payload
-        working-directory: compile/Payload
-
-      - name: Zip output
-        run: zip -qq -r -9 sismos-col.ipa Payload
-        working-directory: compile/
+      - run: |
+          mkdir build/ios/iphoneos/Payload
+          cp -r build/ios/iphoneos/Runner.app build/ build/ios/iphoneos/Payload
+          cd build/ios/iphoneos/Payload
+          zip -qq -r -9 ../../sismos-col.ipa Payload
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
