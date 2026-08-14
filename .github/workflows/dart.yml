@@ -26,7 +26,7 @@ jobs:
         working-directory: compile/
 
       - run: mv Runner.app/ Payload
-        working-directory: compile/
+        working-directory: compile/Payload
 
       - name: Zip output
         run: zip -qq -r -9 sismos-col.ipa Payload
