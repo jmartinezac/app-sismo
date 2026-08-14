@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "500471797005",
+    "project_id": "sismoalert-daa70",
+    "storage_bucket": "sismoalert-daa70.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500471797005:android:8df586924ffddf26858c44",
+        "android_client_info": {
+          "package_name": "com.sismojima.sismo_jima"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvn2erG-mjR6LXYcJiZ3NwEsC4qvryGPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
