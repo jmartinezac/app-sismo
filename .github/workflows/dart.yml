@@ -24,7 +24,7 @@ jobs:
 
       - run: |
           mkdir build/ios/iphoneos/Payload
-          cp -r build/ios/iphoneos/Runner.app build/ build/ios/iphoneos/Payload/
+          cp -r build/ios/iphoneos/Runner.app build/ios/iphoneos/Payload/
           cd build/ios/iphoneos
           zip -r ../../sismos-col.ipa Payload
 
