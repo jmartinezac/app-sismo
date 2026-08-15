@@ -26,13 +26,13 @@ jobs:
           mkdir build/ios/iphoneos/Payload
           cp -r build/ios/iphoneos/Runner.app build/ build/ios/iphoneos/Payload
           cd build/ios/iphoneos/Payload
-          zip -qq -r -9 ../../sismos-col.ipa Payload
+          zip -r ../../sismos-col.ipa Payload
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: compile/FlutterIpaExport.ipa
+          name: ios-file-ipa
+          path: build/FlutterIpaExport.ipa
           tag: v1.0
           overwrite: true
           body: "This is first release"
