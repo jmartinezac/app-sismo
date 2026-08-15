@@ -32,5 +32,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ios-file-ipa
-          path: build/FlutterIpaExport.ipa
+          path: build/sismos-col.ipa
           retention-days: 5
